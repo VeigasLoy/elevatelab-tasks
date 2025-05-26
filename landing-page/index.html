@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaskFlow - Focused Productivity</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-blue">
+  <header>
+    <div class="logo">TaskFlow</div>
+    <nav>
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Boost Your Focus</h1>
+      <p>Customize your productivity environment with science-backed color themes.</p>
+      <button>Get Started</button>
+
+      <div class="theme-selector">
+        <p>Choose your focus mode:</p>
+        <button onclick="changeTheme('theme-red')">Physical (Red)</button>
+        <button onclick="changeTheme('theme-blue')">Intellectual (Blue)</button>
+        <button onclick="changeTheme('theme-yellow')">Emotional (Yellow)</button>
+        <button onclick="changeTheme('theme-green')">Balanced (Green)</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TaskFlow. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/loyston-veigas-187547266" target="_blank">LinkedIn</a>
+      <a href="https://github.com/VeigasLoy" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    function changeTheme(theme) {
+      document.body.className = theme;
+    }
+  </script>
+</body>
+</html>
